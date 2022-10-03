@@ -1,0 +1,250 @@
+
+main > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    font-size: .9em;
+    height: 60px;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+/* Global */
+:root
+{
+    --black: #000;
+    --green: #1ed760;
+    --roxo: rgb(153, 51, 153);
+    --azul: rgb(29, 117, 222);
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+.block
+{
+    display: block;
+    width: 100%;
+}
+
+.margin-0
+{
+    margin: 0px !important;
+}
+
+.margin-5
+{
+    margin: 5px !important;
+}
+
+.margin-10
+{
+    margin: 10px !important;
+}
+
+.margin-15
+{
+    margin:15px !important;
+}
+
+.margin-20
+{
+    margin:20px !important;
+}
+
+.margin-top-20
+{
+    margin-top: 20px;
+}
+
+.margin-bottom-20
+{
+    margin-bottom: 20px;
+}
+
+.row
+{
+    display: flex;
+    width: 100%;
+}
+
+.col-md-6
+{
+    width: 50%;
+}
+
+/* Header */
+.header-index
+{
+    padding: 20px;
+    position: relative;
+    background: var(--black);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.header-index .container
+{
+    max-width: 1300px;
+    width: 100%;
+    max-height: 80px;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.brad-content-logo
+{
+    max-width: 135px;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    height: 80px;
+}
+
+.logo
+{
+    background-image: url("../img/logo-index.png");
+    width: 135px;
+    height: 60px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.contents-links
+{
+    width: 100%;
+}
+
+.contents-links .links-header
+{
+    display: flex;
+    width: 100%;
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 18px;
+    justify-content: end;
+    max-height: 80px;
+}
+
+.contents-links .links-header .links
+{
+    font-size: 16px;
+    line-height: inherit;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.contents-links .links-header .links a
+{
+    padding: 28px 17px;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;;
+    color: #fff;
+}
+
+.contents-links .links-header .links a:hover
+{
+   color: var(--green);
+}
+
+.text-title
+{
+    text-align: center;
+}
